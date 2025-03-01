@@ -40,7 +40,7 @@ body{
 @layer components {
   /* --------------------- Sidebar --------------------- */
  .sidebar {
-   @apply fixed w-16 h-screen bg-zinc-100 dark:bg-zinc-800  font-quicksand font-bold flex justify-between flex-col py-5 shadow-lg;
+   @apply fixed w-16 h-[100dvh] bg-zinc-100 dark:bg-zinc-800  font-quicksand font-bold flex justify-between flex-col py-5 shadow-lg;
  }
  .nav-item {
    @apply relative flex items-center justify-center
