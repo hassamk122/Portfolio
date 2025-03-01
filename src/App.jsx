@@ -9,9 +9,8 @@ function App() {
 
   return (
     <div className="flex" >
-      <Sidebar/>
-      <main className='ml-16 w-screen    dark:bg-zinc-900 bg-white'>
-         <Header/>
+          <main className='ml-16 w-screen    dark:bg-zinc-900 bg-white'>
+      <Header/>
 
           <ScrollHandler/>
           <Routes>
@@ -21,6 +20,8 @@ function App() {
      
       <Footer/>
       </main>
+      <Sidebar/>
+     
     </div>
   )
 }
