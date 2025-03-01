@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import './Components/Header/Header.css';
+@import './Components/HeroSection/hero.css';
+
+@custom-variant dark (&:is(.dark *));
+
+*{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+@theme{
+  --font-quicksand:"Quicksand", sans-serif;
+  --font-Excalifont: "Excalifont";
+}
+@font-face {
+  font-family: 'Excalifont';
+  src: url('/fonts/Excalifont-Regular.woff2') format('woff2'),
+       url('/fonts/Excalifont-Regular.woff') format('woff'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  @apply  dark:bg-zinc-900 bg-white;
+}
+@layer utilities {
+  ::selection {
+    @apply bg-teal-400 text-white;
+  }
+}
+
+@layer components {
+  /* --------------------- Sidebar --------------------- */
+ .sidebar {
+   @apply fixed w-16 h-screen bg-zinc-100 dark:bg-zinc-800  font-quicksand font-bold flex justify-between flex-col py-5 shadow-lg;
+ }
+ .nav-item {
+   @apply relative flex items-center justify-center
+     text-zinc-700 dark:text-teal-400
+      dark:hover:text-zinc-800
+     bg-zinc-300 dark:bg-zinc-700
+     hover:bg-teal-400 dark:hover:bg-teal-400
+     shadow-lg p-2 rounded-xl hover:rounded-lg m-2
+     transition-all delay-100 duration-200 ease-linear;
+ }
+ .nav-container {
+   @apply flex items-center;
+  }
+ .sidebar-tooltip {
+   @apply absolute w-auto p-2 left-12 rounded-md shadow-md
+   text-white bg-gray-900
+   text-xs font-bold
+   transition-all duration-100 scale-0 origin-left flex items-center;
+ }
+ .nav-icon {
+   @apply cursor-pointer shadow-lg;
+ }
+ .sidebar-hr {
+   @apply bg-zinc-300 dark:bg-zinc-700
+     border border-zinc-300 dark:border-zinc-700
+     rounded-full mx-2 my-1 w-10;
+ }
+  /* --------------------- End of Sidebar --------------------- */
+}
+

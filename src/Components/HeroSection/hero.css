@@ -1,0 +1,14 @@
+.maintext {
+  @apply drop-shadow-[0px_10px_80px_rgba(255,255,255,0.3)] text-center pb-10  leading-8 sm:leading-10;
+}
+.welcome {
+  @apply text-zinc-800 dark:text-zinc-100 text-base sm:text-3xl font-quicksand font-medium;
+}
+.portfolio {
+  @apply text-teal-400 dark:drop-shadow-[0px_10px_80px_rgba(0,213,190,0.9)]
+   sm:dark:drop-shadow-[0px_10px_80px_rgba(0,213,190,0.4)] 
+  text-4xl sm:text-9xl font-Excalifont;
+}
+.container{
+  @apply font-Excalifont text-zinc-800 dark:text-zinc-100 flex items-center justify-center px-4 flex-col sm:flex-row pt-8 sm:pt-15 gap-10;
+}
