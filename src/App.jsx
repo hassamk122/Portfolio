@@ -6,6 +6,7 @@ import Home from './Pages/Home.jsx';
 import {Router,Link, Route,Routes } from 'react-router-dom';
 import Notfound from './Pages/Notfound.jsx';
 import Project from './Pages/Projects.jsx';
+import Experience from './Components/Experience/Experience.jsx';
 function App() {
 
   return (

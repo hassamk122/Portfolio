@@ -1,6 +1,18 @@
-import React from 'react'
+import {React, useMemo} from 'react'
 import {GraduationCap} from 'lucide-react'
 function Education() {
+    const educationData = useMemo(() => [
+        {
+          timePeriod: 'August, 2020 - May, 2022',
+          degreeName: 'ICS - Intermediate of Computer Science',
+          description: 'I did my ICS from Govt Gordon Graduate College Rawalpindi.',
+        },
+        {
+          timePeriod: 'Oct, 2023 - Present',
+          degreeName: 'BSSE - Bachelors of Software Engineering',
+          description: 'I am currently doing BSSE from Foundation University, Rawalpindi.',
+        },
+      ], []);
   return (
     <div id='education' className=" flex items-center justify-center flex-col  py-5 sm:py-15">
         <h3 className="font-Excalifont flex items-center justify-center gap-2 pt-5 sm:pt-10 text-3xl sm:text-6xl text-teal-400 dark:drop-shadow-[0px_10px_80px_rgba(0,213,190,0.9)]">
@@ -8,8 +20,9 @@ function Education() {
         </h3>
         <table className='mt-5'>
         <tbody>    
-            <EducationRow timePeriod='August, 2020 - May, 2022' degreeName='ICS - Intermediate of Computer Science' description='I did my ICS from Govt Gordon Graduate College Rawalpindi.' />
-            <EducationRow timePeriod='Oct, 2023 - Present' degreeName='BSSE - Bachelors of Software Engineering' description='I currently doing BSSE from Foundation University, Rawalpindi.' />
+        {educationData.map((item, index) => (
+            <EducationRow key={index} {...item} />
+          ))}
         </tbody>
      </table>
         </div>
@@ -29,4 +42,5 @@ const EducationRow = ({timePeriod,degreeName,description})=>{
     </tr>
     )
 }
-export default Education
+
+export default Education;

@@ -1,6 +1,15 @@
-import React from 'react'
+import {React, useMemo} from 'react'
 import { Wand } from 'lucide-react';
 function Experience() {
+  const experiences = useMemo(() => [
+    {
+      id:1,
+      timePeriod: '2021 - 2023',
+      expName: 'Freelance - Thumbnail design',
+      description:
+        'Through my experience, I have developed a keen eye for what works in different niches and consistently deliver high-quality designs that enhance content performance. My skill set includes advanced image manipulation, typography selection, and optimizing thumbnails for different platforms to maximize visibility and impact.',
+    },
+  ], []);
   return (
     <div id='experience' className=" flex items-center justify-center flex-col  py-5 sm:py-15 z-10">
         <h3 className=" flex items-center font-Excalifont justify-center gap-2 pt-5 sm:pt-10 text-3xl sm:text-6xl
@@ -11,8 +20,9 @@ function Experience() {
       items-center justify-center flex-row flex-wrap sm:gap-y-2 sm:gap-x-20 cursor-pointer mx-3
        bg-zinc-100/3 rounded-2xl border border-zinc-200 dark:bg-zinc-900/15 dark:backdrop-blur-md dark:border
         dark:dark:border-zinc-100/5 dark:border-b-zinc-200/30 dark:rounded-xl dark:shadow-xl'>
-            <ExperienceCard timePeriod = '2021 - 2023' expName ='Freelance - Thumbnail design' description='Through my experience, I have developed a keen eye for what works in different niches and consistently deliver high-quality designs that enhance content performance. My skill set includes advanced image manipulation, typography selection, and optimizing thumbnails for different platforms to maximize visibility and impact.' />
-            {/* <ExperienceCard timePeriod = '2024 - present' expName ='Web Development' description='Through my experience, I have developed a keen eye for what works in different niches and consistently deliver high-quality designs that enhance content performance. My skill set includes advanced image manipulation, typography selection, and optimizing thumbnails for different platforms to maximize visibility and impact.' />   */}
+           {experiences.map((exp) => (
+          <ExperienceCard key={exp.id} timePeriod={exp.timePeriod} expName={exp.expName} description={exp.description} />
+        ))}
      </div>
     </div>
   )
@@ -29,4 +39,4 @@ const ExperienceCard = ({timePeriod, expName , description})=>{
                 </div> 
     )
 }
-export default Experience
+export default Experience;
