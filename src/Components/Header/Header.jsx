@@ -24,7 +24,7 @@ function Header() {
           transition={{ duration: 1.2 }}
           className="social-icon"
         >
-          <Github  className={iconStyle} />
+         <a href="https://github.com/hassamk122" target="_blank"> <Github  className={iconStyle} /></a>
         </motion.li>
         <motion.li
           initial={{ x: 100 }}
