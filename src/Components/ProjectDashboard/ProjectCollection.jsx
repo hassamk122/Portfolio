@@ -1,6 +1,6 @@
 
 import ProjectCard from './ProjectCard.jsx';
-const laPassion = '/Project-pics/AuraAudit_Logo.webp';
+const laPassion = '/Project-pics/AuraAudit_Logo.svg';
 const laPassionBg = '/Project-pics/la passion.webp';
 const expenso = '/Project-pics/Expenso.svg';
 const expensoBg = '/Project-pics/expenso-cover.webp';
