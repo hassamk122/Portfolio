@@ -29,7 +29,7 @@ html{
   -moz-osx-font-smoothing: grayscale;
 }
 body{
-  @apply  dark:bg-zinc-900 bg-white;
+  @apply  dark:bg-zinc-900 bg-white scroll-smooth;
 }
 @layer utilities {
   ::selection {
