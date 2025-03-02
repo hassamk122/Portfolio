@@ -1,11 +1,12 @@
 
 import ProjectCard from './ProjectCard.jsx';
-import laPassion from 'public/Project-pics/AuraAudit_Logo.webp';
-import laPassionBg from 'public/Project-picsassets/Project-pics/la passion.webp';
-import expenso from 'public/Project-pics/Expenso.svg';
-import expensoBg from 'public/Project-pics/expenso-cover.webp';
-import YTD from 'public/Project-pics/Project-pics/Fleet.svg';
-import YTDBg from 'public/Project-pics/Project-pics/YTD.webp';
+const laPassion = '/Project-pics/AuraAudit_Logo.webp';
+const laPassionBg = '/Project-pics/la passion.webp';
+const expenso = '/Project-pics/Expenso.svg';
+const expensoBg = '/Project-pics/expenso-cover.webp';
+const YTD = '/Project-pics/Fleet.svg';
+const YTDBg = '/Project-pics/YTD.webp';
+
 
 const laPassionId = import.meta.env.VITE_DOCUMENT_ID_LAPASSION;
 const expensoId = import.meta.env.VITE_DOCUMENT_ID_EXPENSO;
