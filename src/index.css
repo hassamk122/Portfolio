@@ -40,7 +40,7 @@ body{
 @layer components {
   /* --------------------- Sidebar --------------------- */
  .sidebar {
-   @apply fixed w-16 min-h-screen bg-zinc-100 dark:bg-zinc-800  font-quicksand font-bold flex justify-between flex-col py-5 shadow-lg;
+   @apply fixed w-16 min-h-screen bg-zinc-100 dark:bg-zinc-800  font-quicksand font-bold flex justify-between flex-col py-5 shadow-lg z-[99999];
  }
  .nav-item {
    @apply relative flex items-center justify-center
@@ -58,7 +58,7 @@ body{
    @apply isolate absolute w-auto p-2 left-12 rounded-md shadow-md
    text-white bg-gray-900
    text-xs font-bold
-   transition-all duration-100 scale-0 origin-left flex items-center z-[9999];
+   transition-all duration-100 scale-0 origin-left flex items-center;
  }
  .nav-icon {
    @apply cursor-pointer shadow-lg;

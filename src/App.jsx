@@ -10,6 +10,7 @@ function App() {
 
   return (
     <div className="flex" >
+     
           <main className='ml-16 w-screen    dark:bg-zinc-900 bg-white'>
       <Header/>
           <ScrollHandler/>

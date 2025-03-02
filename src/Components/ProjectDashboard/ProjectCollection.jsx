@@ -13,10 +13,11 @@ const expensoId = import.meta.env.VITE_DOCUMENT_ID_EXPENSO;
 const ytdId = import.meta.env.VITE_DOCUMENT_ID_YTD;
 function ProjectCollection(){
   return (
-    <section className='flex gap-10 flex-wrap'>
+    <section className='flex items-center justify-center flex-row  gap-10 flex-wrap'>
     <ProjectCard title ="La Passion" bgPic ={laPassionBg} logo={laPassion} gitLink ="https://github.com/hassamk122/LaPassion" documentId={laPassionId} />
     <ProjectCard title ="Expenso" bgPic ={expensoBg} logo={expenso} gitLink ="https://github.com/hassamk122/Expenso" documentId={expensoId} />
     <ProjectCard title ="YTD" bgPic ={YTDBg} logo={YTD} gitLink ="https://github.com/hassamk122/Youtube-thumbnail-Downloader"  documentId={ytdId}/>
+    <small className="font-Excalifont text-zinc-400 dark:text-zinc-700 text-center text-[10px] sm:text-sm">*Note: These are personal projects showcasing creativity, technical skills, and a commitment to continuous learning.</small>
     </section>
   )
 }

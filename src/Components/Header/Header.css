@@ -1,5 +1,5 @@
 .header{
-    @apply fixed w-full bg-white/30 dark:bg-zinc-900/30 backdrop-blur-md border-b dark:border-b-zinc-100/5 border-b-zinc-200/30 overflow-hidden;
+    @apply fixed w-full bg-white/30 dark:bg-zinc-900/3 backdrop-blur-md border-b dark:border-b-zinc-100/5 border-b-zinc-200/30 overflow-hidden z-[50];
 }
 .social-icon{
     @apply p-2 text-zinc-800 dark:text-zinc-100 text-xs ;

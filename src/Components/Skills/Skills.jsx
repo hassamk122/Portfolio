@@ -17,7 +17,7 @@ function Skills() {
     ]
 
   return (
-    <div id="skills" className=" flex items-center justify-center flex-col  py-5 ">
+    <div id="skills" className=" flex items-center justify-center flex-col  py-5">
       <h3 className=" flex items-center font-Excalifont justify-center gap-2 pt-5 sm:pt-10 text-3xl sm:text-6xl text-teal-400 dark:drop-shadow-[0px_10px_80px_rgba(0,213,190,0.9)]">
         <Sparkles
           className="w-10 h-10 sm:w-20 sm:h-20"

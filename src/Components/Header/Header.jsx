@@ -15,7 +15,7 @@ function Header() {
           transition={{ duration: 1.5 }}
           className="social-icon"
         >
-          <Linkedin    className={iconStyle} />
+         <a href="https://www.linkedin.com/in/hassam-kiani-648459248/" target="_blank"> <Linkedin    className={iconStyle} /></a>
         </motion.li>
         <motion.li
 
@@ -32,7 +32,7 @@ function Header() {
           transition={{ duration: 1.8 }}
           className="social-icon"
         >
-          <FaBehance    className={iconStyle} />
+         <a href="https://www.behance.net/hassamkiani" target="_blank"><FaBehance    className={iconStyle} /></a> 
         </motion.li>
         <motion.li
           initial={{ x: 100 }}
@@ -40,7 +40,7 @@ function Header() {
           transition={{ duration: 0.9 }}
           className="social-icon"
         >
-          <Instagram  className={iconStyle} />
+          <a href="https://www.instagram.com/hassamkiani_/?igsh=MXhsYzBvenVzamJ1dg%3D%3D#" target="_blank"><Instagram  className={iconStyle} /></a>
         </motion.li>
       </ul>
     </div>
