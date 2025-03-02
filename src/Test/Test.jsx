@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect,useState } from 'react'
-import {getLikesByDocumentId,incrementLikesByDocumentId} from '../../Appwrite/databases.js'
+import {getLikesByDocumentId,incrementLikesByDocumentId} from '../Appwrite/databases.js'
 
 
 const docId = import.meta.env.VITE_DOCUMENT_ID_FIRST;

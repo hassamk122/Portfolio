@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { FolderGit2,ExternalLink } from "lucide-react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiFillHeart } from "react-icons/ai";
-import {getLikesByDocumentId,incrementLikesByDocumentId,decrementLikesByDocumentId} from '../../../Appwrite/databases.js'
+import {getLikesByDocumentId,incrementLikesByDocumentId,decrementLikesByDocumentId} from '../../Appwrite/databases.js'
 
 function ProjectCard({ title, bgPic, logo, gitLink,documentId }) {
 
