@@ -8,9 +8,9 @@ function Sidebar() {
         <ul className='flex items-center flex-col'>
             <li className='nav-item'><Link to='/' ><SideBarIcon icon={<Home  className='nav-icon'/>} text='Home' /></Link></li>
             <Divider/>
-           <li className='nav-item'><a href='#skills'><SideBarIcon icon={<Sparkles   className='nav-icon'/>} text='Skills'/></a></li>
-            <li className='nav-item'><a href='#experience'><SideBarIcon icon={<Wand   className='nav-icon'/>} text="Experience" /></a></li>
-            <li className='nav-item'><a href='#education'><SideBarIcon icon={<GraduationCap   className='nav-icon'/>} text='Education'/></a></li>
+           <li className='nav-item'><Link href='/#skills'><SideBarIcon icon={<Sparkles   className='nav-icon'/>} text='Skills'/></Link></li>
+            <li className='nav-item'><Link href='/#experience'><SideBarIcon icon={<Wand   className='nav-icon'/>} text="Experience" /></Link></li>
+            <li className='nav-item'><Link href='/#education'><SideBarIcon icon={<GraduationCap   className='nav-icon'/>} text='Education'/></Link></li>
             <li className='nav-item'><Link to='/projects' ><SideBarIcon icon={<Folder   className='nav-icon'/>} text="Projects" /></Link></li>
             <li className='nav-item'><Link to='/thumbnails' ><SideBarIcon icon={<Images   className='nav-icon'/>} text='Thumbnails'/></Link></li>
         </ul>
