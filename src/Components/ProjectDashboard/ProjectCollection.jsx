@@ -1,11 +1,11 @@
-import {React ,useState,useEffect} from 'react'
+
 import ProjectCard from './ProjectCard.jsx';
-import laPassion from 'public/assets/Project-pics/AuraAudit_Logo.webp';
-import laPassionBg from 'public/assets/Project-picsassets/Project-pics/la passion.webp';
-import expenso from 'public/assets/Project-pics/Expenso.svg';
-import expensoBg from 'public/assets/Project-pics/expenso-cover.webp';
-import YTD from 'public/assets/Project-pics/Project-pics/Fleet.svg';
-import YTDBg from 'public/assets/Project-pics/Project-pics/YTD.webp';
+import laPassion from 'public/Project-pics/AuraAudit_Logo.webp';
+import laPassionBg from 'public/Project-picsassets/Project-pics/la passion.webp';
+import expenso from 'public/Project-pics/Expenso.svg';
+import expensoBg from 'public/Project-pics/expenso-cover.webp';
+import YTD from 'public/Project-pics/Project-pics/Fleet.svg';
+import YTDBg from 'public/Project-pics/Project-pics/YTD.webp';
 
 const laPassionId = import.meta.env.VITE_DOCUMENT_ID_LAPASSION;
 const expensoId = import.meta.env.VITE_DOCUMENT_ID_EXPENSO;
