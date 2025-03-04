@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import SmoothScroll from './Components/smoothScroll';
+import SmoothScroll from './Components/SmoothScroll.jsx';
 const Header = lazy(() => import('./Components/Header/Header.jsx'));
 const Sidebar = lazy(() => import('./Components/Sidebar/Sidebar.jsx'));
 const Footer = lazy(() => import('./Components/Footer/Footer.jsx'));
