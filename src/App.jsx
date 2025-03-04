@@ -1,31 +1,34 @@
-import Header from './Components/Header/Header.jsx'
-import Sidebar from './Components/Sidebar/Sidebar.jsx';
-import Footer from './Components/Footer/Footer.jsx';
-import Home from './Pages/Home.jsx';
-import {Route,Routes } from 'react-router-dom';
-import Notfound from './Pages/Notfound.jsx';
-import Project from './Pages/Projects.jsx';
-import ScrollHandler from './Components/ScrollHandler.jsx';
-function App() {
+import { lazy, Suspense } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import SmoothScroll from './Components/smoothScroll.js';
 
+const Header = lazy(() => import('./Components/Header/Header.jsx'));
+const Sidebar = lazy(() => import('./Components/Sidebar/Sidebar.jsx'));
+const Footer = lazy(() => import('./Components/Footer/Footer.jsx'));
+const Home = lazy(() => import('./Pages/Home.jsx'));
+const Notfound = lazy(() => import('./Pages/Notfound.jsx'));
+const Project = lazy(() => import('./Pages/Projects.jsx'));
+const ScrollHandler = lazy(() => import('./Components/ScrollHandler.jsx'));
+
+function App() {
   return (
-    <div className="flex" >
-     
-          <main className='ml-16 w-screen    dark:bg-zinc-900 bg-white'>
-      <Header/>
-      <ScrollHandler/>
-          <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Project />} />
-          <Route path="*" element={<Notfound />} />
-          </Routes>
-     
-      <Footer/>
-      </main>
-      <Sidebar/>
-     
+    <div className="relative flex h-screen">
+        <Sidebar />
+        <Header />
+      <div id="my-scrollbar" className="flex-grow overflow-hidden">
+        <SmoothScroll />
+        <main className="ml-16 dark:bg-zinc-900 bg-white">  
+            <ScrollHandler />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Project />} />
+              <Route path="*" element={<Notfound />} />
+            </Routes>
+            <Footer /> 
+        </main>
+      </div>
     </div>
-  )
+  );
 }
 
 export default App;

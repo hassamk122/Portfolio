@@ -22,6 +22,7 @@ html{
   font-style: normal;
 }
 
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -40,7 +41,7 @@ body{
 @layer components {
   /* --------------------- Sidebar --------------------- */
  .sidebar {
-   @apply fixed w-16 min-h-screen bg-zinc-100 dark:bg-zinc-800  font-quicksand font-bold flex justify-between flex-col py-5 shadow-lg z-[99999];
+   @apply fixed left-0 top-0 w-16 h-dvh bg-zinc-100 dark:bg-zinc-800  font-quicksand font-bold flex justify-between flex-col py-5 shadow-lg z-[99999];
  }
  .nav-item {
    @apply relative flex items-center justify-center

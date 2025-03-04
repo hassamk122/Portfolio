@@ -3,7 +3,7 @@ import Hero from '../Components/HeroSection/hero.jsx';
 import Skills from '../Components/Skills/Skills.jsx';
 import Experience from '../Components/Experience/Experience.jsx';
 import Education from '../Components/Education/Education.jsx';
-
+import React from 'react';
 function LazySection({ component: Component }) {
   const [ref, isVisible] = UseInView({ threshold: 0.2 });
 

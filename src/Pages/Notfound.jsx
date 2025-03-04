@@ -1,6 +1,6 @@
 
 import ballon from '../assets/svgs/balloon-svgrepo-com.svg'
-import { motion} from "motion/react";
+import { motion } from "motion/react";
 
 function Notfound() {
   return (

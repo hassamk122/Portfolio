@@ -2,6 +2,7 @@ import { Folder, Github, Home, Images,Instagram,Linkedin,User ,Sparkles,Wand, Gr
 import DarkModeBtn from '../../DarkMode/DarkModeBtn.jsx';
 import resume from '../../assets/Hassam Kiani-Resume.pdf'
 import { Link } from 'react-router-dom';
+import { useCallback } from 'react';
 function Sidebar() {
   return (
     <nav className='sidebar'>

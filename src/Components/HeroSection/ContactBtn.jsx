@@ -1,6 +1,7 @@
 import React from 'react'
+import { memo } from "react";
 import { motion } from "motion/react";
-function ContactBtn() {
+const ContactBtn = ()=> {
   return (
     <motion.a
       whileHover={{scale:1.1}}
@@ -13,4 +14,4 @@ function ContactBtn() {
   )
 }
 
-export default ContactBtn;
+export default memo(ContactBtn);
