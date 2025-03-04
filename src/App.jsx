@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import SmoothScroll from './Components/smoothScroll.js';
+
 
 const Header = lazy(() => import('./Components/Header/Header.jsx'));
 const Sidebar = lazy(() => import('./Components/Sidebar/Sidebar.jsx'));
@@ -9,7 +9,7 @@ const Home = lazy(() => import('./Pages/Home.jsx'));
 const Notfound = lazy(() => import('./Pages/Notfound.jsx'));
 const Project = lazy(() => import('./Pages/Projects.jsx'));
 const ScrollHandler = lazy(() => import('./Components/ScrollHandler.jsx'));
-
+const SmoothScroll =(import('./Components/SmoothScroll'));
 function App() {
   return (
     <div className="relative flex h-screen">
