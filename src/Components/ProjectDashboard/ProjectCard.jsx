@@ -4,7 +4,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { AiFillHeart } from "react-icons/ai";
 import {getLikesByDocumentId,incrementLikesByDocumentId,decrementLikesByDocumentId} from '../../Appwrite/databases.js'
 
-function ProjectCard({ title, bgPic, logo, gitLink,documentId }) {
+function ProjectCard({ title, bgPic, logo, gitLink,documentId,visit }) {
 
 
   const [liked, setLiked] = useState(false);
@@ -80,7 +80,7 @@ function ProjectCard({ title, bgPic, logo, gitLink,documentId }) {
         dark:dark:border-zinc-100/5 dark:border-b-zinc-200/30 dark:rounded-xl dark:shadow-xl"
     >
       <div className="flex items-center justify-center w-54 h-36 sm:w-72 sm:h-48 m-4">
-        <img src={bgPic} className="rounded-xl" loading="lazy"></img>
+       <a href={visit} target="_blank"> <img src={bgPic} className="rounded-xl" loading="lazy"></img></a>
       </div>
       <div className="flex items-center justify-between px-5 mt-3  flex-row  py-2 ">
         <div className="flex items-center justify-center gap-1 ">

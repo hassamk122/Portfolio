@@ -1,4 +1,4 @@
-import { Folder, Github, Home, Images,Instagram,Linkedin,User ,Sparkles,Wand, GraduationCap, Download } from 'lucide-react'
+import { Folder, Github, Home, Image,Instagram,Linkedin,User ,Sparkles,Wand, GraduationCap, Download  ,BookImage} from 'lucide-react'
 import DarkModeBtn from '../../DarkMode/DarkModeBtn.jsx';
 import resume from '../../assets/Hassam Kiani-Resume.pdf'
 import { Link } from 'react-router-dom';
@@ -13,7 +13,8 @@ function Sidebar() {
             <li className='nav-item'><Link to='/#experience'><SideBarIcon icon={<Wand   className='nav-icon'/>} text="Experience" /></Link></li>
             <li className='nav-item'><Link to='/#education'><SideBarIcon icon={<GraduationCap   className='nav-icon'/>} text='Education'/></Link></li>
             <li className='nav-item'><Link to='/projects' ><SideBarIcon icon={<Folder   className='nav-icon'/>} text="Projects" /></Link></li>
-            <li className='nav-item'><Link to='/thumbnails' ><SideBarIcon icon={<Images   className='nav-icon'/>} text='Thumbnails'/></Link></li>
+            <li className='nav-item'><Link to='/thumbnails' ><SideBarIcon icon={<Image   className='nav-icon'/>} text='Thumbnails'/></Link></li>
+            <li className='nav-item'><Link to='/posters' ><SideBarIcon icon={<BookImage   className='nav-icon'/>} text='Posters'/></Link></li>
         </ul>
         
         <ul className=' flex items-center flex-col'>
