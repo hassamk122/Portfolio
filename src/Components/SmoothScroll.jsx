@@ -14,13 +14,22 @@ const SmoothScroll = () => {
     if (!scrollbarContainer) return;
 
     if (isDesktop) {
-     
-      const scrollbar = Scrollbar.init(scrollbarContainer, options);
-      return () => scrollbar.destroy();
+      if (!Scrollbar.get(scrollbarContainer)) {
+        Scrollbar.init(scrollbarContainer, options);
+      }
     } else {
-      
-      Scrollbar.destroy(scrollbarContainer);
+      const scrollbar = Scrollbar.get(scrollbarContainer);
+      if (scrollbar) {
+        scrollbar.destroy();
+      }
     }
+
+    return () => {
+      const scrollbar = Scrollbar.get(scrollbarContainer);
+      if (scrollbar) {
+        scrollbar.destroy();
+      }
+    };
   }, [isDesktop]);
 
   return null;
