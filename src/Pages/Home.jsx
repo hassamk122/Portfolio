@@ -1,28 +1,25 @@
-import { UseInView } from './UseInView.jsx';
+import { Suspense, lazy } from 'react';
 import Hero from '../Components/HeroSection/hero.jsx';
-import Skills from '../Components/Skills/Skills.jsx';
-import Experience from '../Components/Experience/Experience.jsx';
-import Education from '../Components/Education/Education.jsx';
-import React from 'react';
-function LazySection({ component: Component }) {
-  const [ref, isVisible] = UseInView({ threshold: 0.2 });
 
-  return (
-    <div ref={ref}>
-      {isVisible && <Component />}
-    </div>
-  );
-}
+const Skills = lazy(() => import('../Components/Skills/Skills.jsx'));
+const Experience = lazy(() => import('../Components/Experience/Experience.jsx'));
+const Education = lazy(() => import('../Components/Education/Education.jsx'));
+
 function Home() {
-
   return (
     <>
-    <Hero/>
-        <LazySection component={Skills} />
-      <LazySection component={Experience} />
-      <LazySection component={Education} />
+      <Hero />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Skills />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Experience />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Education />
+      </Suspense>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
