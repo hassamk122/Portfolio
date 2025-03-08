@@ -10,16 +10,17 @@ const SmoothScroll = () => {
   const isDesktop = useMediaQuery({ minWidth: 768 });
 
   useEffect(() => {
-    if (!isDesktop) return; 
-
     const scrollbarContainer = document.querySelector("#my-scrollbar");
     if (!scrollbarContainer) return;
 
-    const scrollbar = Scrollbar.init(scrollbarContainer, options);
-
-    return () => {
-      if (scrollbar) scrollbar.destroy();
-    };
+    if (isDesktop) {
+     
+      const scrollbar = Scrollbar.init(scrollbarContainer, options);
+      return () => scrollbar.destroy();
+    } else {
+      
+      Scrollbar.destroy(scrollbarContainer);
+    }
   }, [isDesktop]);
 
   return null;
