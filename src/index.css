@@ -37,6 +37,12 @@ body{
     @apply bg-teal-400 text-white;
   }
 }
+#my-scrollbar {
+  width: 100%;
+  height: 100vh;
+  overflow: auto; 
+  -webkit-overflow-scrolling: touch; 
+}
 
 @layer components {
   /* --------------------- Sidebar --------------------- */

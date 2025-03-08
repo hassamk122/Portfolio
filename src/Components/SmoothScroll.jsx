@@ -14,21 +14,27 @@ const SmoothScroll = () => {
     if (!scrollbarContainer) return;
 
     if (isDesktop) {
+
       if (!Scrollbar.get(scrollbarContainer)) {
         Scrollbar.init(scrollbarContainer, options);
       }
     } else {
+
       const scrollbar = Scrollbar.get(scrollbarContainer);
       if (scrollbar) {
         scrollbar.destroy();
       }
+
+
+      scrollbarContainer.style.overflow = "auto";
+      scrollbarContainer.style.height = "100%";
+      scrollbarContainer.style.webkitOverflowScrolling = "touch"; 
     }
 
     return () => {
+     
       const scrollbar = Scrollbar.get(scrollbarContainer);
-      if (scrollbar) {
-        scrollbar.destroy();
-      }
+      if (scrollbar) scrollbar.destroy();
     };
   }, [isDesktop]);
 
