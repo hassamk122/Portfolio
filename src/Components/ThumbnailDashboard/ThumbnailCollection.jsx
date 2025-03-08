@@ -5,7 +5,7 @@ import images from './images.jsx'
 
 function ThumbnailCollection() {
  
-    const categories = ["All", "Finance", "Football", "IRL", "Podcast"];
+    const categories = ["All", "Finance", "Football", "IRL", "Other"];
     const [activeCategory, setActiveCategory] = useState("All");
     const [showAll , setShowAll] = useState(false);
     const filteredImages = useMemo(() => {
