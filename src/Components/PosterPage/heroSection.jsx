@@ -1,7 +1,7 @@
-import { memo, lazy, Suspense } from 'react';
+import { memo} from 'react';
 import { BookImage } from 'lucide-react';
 
-const PosterCollection = lazy(() => import('./PosterCollection'));
+import PosterCollection from './PosterCollection';
 
 function HeroSection() {
   return (
@@ -16,10 +16,8 @@ function HeroSection() {
         </h3>
       </div>
 
-      <div className="pt-10">
-        <Suspense fallback={<div>Loading...</div>}>
+      <div className="pt-10">  
           <PosterCollection />
-        </Suspense>
       </div>
     </div>
   );

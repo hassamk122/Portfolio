@@ -1,16 +1,17 @@
-import { lazy, Suspense } from 'react';
+
 import { Route, Routes } from 'react-router-dom';
 
 import SmoothScroll from './Components/SmoothScroll.jsx';
 import Posters from './Pages/Posters.jsx';
-const Header = lazy(() => import('./Components/Header/Header.jsx'));
-const Sidebar = lazy(() => import('./Components/Sidebar/Sidebar.jsx'));
-const Footer = lazy(() => import('./Components/Footer/Footer.jsx'));
-const Home = lazy(() => import('./Pages/Home.jsx'));
-const Notfound = lazy(() => import('./Pages/Notfound.jsx'));
-const Project = lazy(() => import('./Pages/Projects.jsx'));
-const ScrollHandler = lazy(() => import('./Components/ScrollHandler.jsx'));
-const Thumbnails = lazy(()=>import('./Pages/Thumbnails.jsx'));
+import Header from './Components/Header/Header.jsx';
+import Sidebar from './Components/Sidebar/Sidebar.jsx';
+import Footer from './Components/Footer/Footer.jsx';
+import Home from './Pages/Home.jsx';
+import Notfound from './Pages/Notfound.jsx';
+import Project from './Pages/Projects.jsx';
+import ScrollHandler from './Components/ScrollHandler.jsx';
+import Thumbnails from './Pages/Thumbnails.jsx';
+
 
 function App() {
   return (

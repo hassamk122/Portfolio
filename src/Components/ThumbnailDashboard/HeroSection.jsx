@@ -1,8 +1,8 @@
-import React, { Suspense, lazy, memo } from 'react';
+import React, {memo } from 'react';
 import { Image } from 'lucide-react';
 
-const ThumbnailMarquee = lazy(() => import('./ThumbnailMarquee'));
-const ThumbnailCollection = lazy(() => import('./ThumbnailCollection'));
+import ThumbnailMarquee from './ThumbnailMarquee';
+import ThumbnailCollection from './ThumbnailCollection';
 
 const HeroSection = () => {
   return (
@@ -14,18 +14,14 @@ const HeroSection = () => {
         <Image className="sm:w-12 sm:h-12 h-8 w-8" /> Thumbnails
       </h3>
 
-      <Suspense fallback={<div>Loading...</div>}>
         <div className="flex items-center justify-center flex-col gap-2 mt-10 sm:mt-10">
           <ThumbnailMarquee speed={40} from={0} to={10} />
           <ThumbnailMarquee speed={20} from={10} to={20} />
         </div>
-      </Suspense>
 
-      <Suspense fallback={<div>Loading...</div>}>
         <div className="flex items-center justify-center flex-col mt-1 sm:mt-5">
           <ThumbnailCollection />
         </div>
-      </Suspense>
     </div>
   );
 };
