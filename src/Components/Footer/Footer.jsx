@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div>
-    <div className='flex items-center justify-center flex-col mt-5 sm:mt-10 font-quicksand text-zinc-100 text-center'>
+    <div className='flex items-center justify-center flex-col mt-5 sm:mt-10 font-quicksand dark:text-zinc-100 text-zinc-800 text-center'>
               <p className='text-teal-400 text-xs sm:text-sm dark:drop-shadow-[0px_2px_15px_rgba(0,213,190,0.3)] font-semibold '>Looking for a Designer?</p>
                 <p className='pt-1 text-[10px] sm:text-sm'>💌 Contact me at hassamkiani66@gmail.com.</p>
               </div>

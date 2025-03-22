@@ -17,9 +17,9 @@ function ThumbnailCollection() {
         <div className='flex items-center justify-center flex-col flex-wrap p-2'>
           <div className='m-8 text-center p-2'>
            <h3 className='font-quicksand font-bold text-2xl sm:text-4xl  text-teal-400'>Thumbnail Collection</h3>
-           <h3 className='font-quicksand font-normal  text-sm sm:text-xl  text-zinc-100 drop-shadow-[0px_5px_20px_rgba(255,255,255,0.4)]'>Check Out My Collection of Thumbnail Designs.</h3>
+           <h3 className='font-quicksand font-normal  text-sm sm:text-xl text-zinc-800  dark:text-zinc-100 drop-shadow-[0px_5px_20px_rgba(255,255,255,0.4)]'>Check Out My Collection of Thumbnail Designs.</h3>
            </div>
-            <div className='flex items-center justify-center gap-2 sm:gap-4 py-1 px-2 border-[1px] border-teal-400 rounded-lg text-xs sm:text-base  font-quicksand font-semibold text-zinc-100 m-4 mb-8'>
+            <div className='flex items-center dark:text-zinc-100 justify-center gap-2 sm:gap-4 py-1 px-2 border-[1px] border-teal-400 rounded-lg text-xs sm:text-base  font-quicksand font-semibold text-zinc-700 m-4 mb-8'>
         {categories.map((category) => (
           <button
             key={category}
@@ -55,8 +55,8 @@ function ThumbnailCollection() {
         (
         <button
         onClick={() => setShowAll((prev) => !prev)}
-        className='flex items-center justify-center flex-row gap-2 border-2 border-teal-400 text-teal-400 text-sm
-         hover:bg-teal-400 hover:text-zinc-800 cursor-pointer rounded-full transition-all delay-75 duration-300 ease-in-out px-3 py-1 font-quicksand font-black'
+        className='flex items-center justify-center flex-row gap-2 border-2 border-teal-400 text-teal-400 text-sm 
+         hover:bg-teal-400 hover:text-zinc-100 cursor-pointer rounded-full transition-all delay-75 duration-300 ease-in-out px-3 py-1 font-quicksand font-black'
       >
         {showAll ? <>View Less<ChevronUp /></>:<>View More<ChevronDown /></>}
       </button>):

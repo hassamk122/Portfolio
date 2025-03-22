@@ -11,7 +11,7 @@ function HeroSection() {
       </h3>
 
       <div className="mt-8 text-center p-2">
-        <h3 className="font-quicksand font-normal text-sm sm:text-xl text-zinc-100 drop-shadow-[0px_5px_20px_rgba(255,255,255,0.4)]">
+        <h3 className="font-quicksand font-normal text-sm sm:text-xl text-zinc-800 dark:text-zinc-100 drop-shadow-[0px_5px_20px_rgba(255,255,255,0.4)]">
           Check Out My Poster Design Collection..
         </h3>
       </div>
