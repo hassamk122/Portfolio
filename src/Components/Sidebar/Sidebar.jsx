@@ -1,6 +1,6 @@
 import { Folder, Github, Home, Image,Instagram,Linkedin,User ,Sparkles,Wand, GraduationCap, Download  ,BookImage} from 'lucide-react'
 import DarkModeBtn from '../../DarkMode/DarkModeBtn.jsx';
-import resume from '../../assets/Hassam Kiani-Resume.pdf'
+import resume from '../../assets/Muhammad Hassam.pdf'
 import { Link } from 'react-router-dom';
 import { useCallback } from 'react';
 function Sidebar() {
