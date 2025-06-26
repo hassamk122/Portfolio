@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import ContactBtn from './ContactBtn'
-import Hassam from '../../assets/hassam.png'
+import Hassam from '/logo.svg'
 import arrow from '../../assets/svgs/turn-right-arrow-white.svg';
 import Arrowdark from '../../assets/svgs/turn-right-arrow.svg';
 function hero() {
