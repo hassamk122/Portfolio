@@ -5,30 +5,14 @@ import ProjectCard from './ProjectCard.jsx';
 
 
 const projects = [
-  {
-    id: import.meta.env.VITE_DOCUMENT_ID_LAPASSION,
-    title: 'La Passion',
-    logo: '/Project-pics/AuraAudit_Logo.svg',
-    bgPic: '/Project-pics/la passion.webp',
-    gitLink: 'https://github.com/hassamk122/LaPassion',
-    visit: 'https://la-passion.vercel.app/',
-  },
-  {
-    id: import.meta.env.VITE_DOCUMENT_ID_EXPENSO,
-    title: 'Expenso',
-    logo: '/Project-pics/Expenso.svg',
-    bgPic: '/Project-pics/expenso-cover.webp',
-    gitLink: 'https://github.com/hassamk122/Expenso',
-    visit: 'https://expenso-pakistan.vercel.app/',
-  },
-  {
-    id: import.meta.env.VITE_DOCUMENT_ID_YTD,
-    title: 'YTD',
+  { title: 'YT Thumbnail Downloader',
     logo: '/Project-pics/Fleet.svg',
     bgPic: '/Project-pics/YTD.webp',
     gitLink: 'https://github.com/hassamk122/Youtube-thumbnail-Downloader',
     visit: 'https://ytd-pakistan.vercel.app/',
   },
+
+
 ];
 
 const ProjectCollection = () => {
@@ -41,16 +25,18 @@ const ProjectCollection = () => {
           bgPic={project.bgPic}
           logo={project.logo}
           gitLink={project.gitLink}
-          documentId={project.id}
-          visit={project.visit}
+         visit={project.visit}
         />
       )),
     []
   );
 
   return (
-    <section className="flex items-center justify-center flex-row gap-10 flex-wrap">
-    {renderedProjects}
+    <section className="flex items-center justify-center flex-col gap-10 flex-wrap">
+      <div className='flex flex-col md:flex-row gap-10 flex-wrap'>
+        {renderedProjects}
+      </div>
+   
       <small className="font-Excalifont text-zinc-400 dark:text-zinc-700 text-center text-[10px] sm:text-sm">
         *Note: These are personal projects showcasing creativity, technical skills, and a commitment to continuous learning.
       </small>
