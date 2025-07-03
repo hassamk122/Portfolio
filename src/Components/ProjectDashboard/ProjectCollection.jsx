@@ -11,7 +11,12 @@ const projects = [
     gitLink: 'https://github.com/hassamk122/Youtube-thumbnail-Downloader',
     visit: 'https://ytd-pakistan.vercel.app/',
   },
-
+  { title: 'Tic Tac Toe',
+    logo: '/logo.svg',
+    bgPic: '/Project-pics/tic tac toe.png',
+    gitLink: 'https://github.com/hassamk122/Tic-Tac-Toe',
+    visit: 'https://tic-tac-toe-hassam.vercel.app/',
+  },
 
 ];
 
@@ -33,7 +38,7 @@ const ProjectCollection = () => {
 
   return (
     <section className="flex items-center justify-center flex-col gap-10 flex-wrap">
-      <div className='flex flex-col md:flex-row gap-10 flex-wrap'>
+      <div className='flex flex-col  md:flex-row gap-10 flex-wrap'>
         {renderedProjects}
       </div>
    

@@ -4,7 +4,7 @@ import Hassam from '/logo.svg'
 import arrow from '../../assets/svgs/turn-right-arrow-white.svg';
 import Arrowdark from '../../assets/svgs/turn-right-arrow.svg';
 function hero() {
-
+  
   const images = useMemo(()=>(
     {arrow,Arrowdark,Hassam}
   ),[]);

@@ -13,7 +13,7 @@ function ProjectCard({ title, bgPic, logo, gitLink ,visit}) {
       <div className="flex items-center justify-center w-54 h-36 sm:w-74 sm:h-54 m-4">
        <a href={visit} target="_blank"> <img src={bgPic} className="rounded-xl" loading="lazy"></img></a>
       </div>
-      <div className="flex items-center justify-between px-5 mt-3  flex-row  py-2 gap-4 ">
+      <div className="flex items-center justify-between  px-5 mt-3  flex-row  py-2 gap-4 ">
         <div className="flex items-center justify-center gap-1 ">
           <img src={logo} className="w-8 h-8 " loading="lazy"></img>
         <h2 className="font-bold text-zinc-800 dark:text-zinc-100 ">{title}</h2>
